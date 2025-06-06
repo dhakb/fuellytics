@@ -1,22 +1,27 @@
-import type { Metadata } from "next";
 import type React from "react";
+import type { Metadata } from "next";
+import { Inter } from "next/font/google";
+
 import "./globals.css";
 
+
+const inter = Inter({subsets: ["latin"]});
+
 export const metadata: Metadata = {
-  title: "Fuellytics",
-  description: "Fuel prices insight dashboard",
+  title: "Fuellytics - US Fuel Price Analytic",
+  description: "Track and analyze fuel prices across the US"
 };
 
 export default function RootLayout({
-  children,
+  children
 }: Readonly<{
   children: React.ReactNode;
 }>) {
   return (
     <html lang="en">
-      <body>
-        {children}
-      </body>
+    <body className={inter.className}>
+    {children}
+    </body>
     </html>
   );
 }
