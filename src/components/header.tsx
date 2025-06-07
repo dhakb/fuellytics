@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { MainNav } from "@/components/main-nav";
+import { ModeToggle } from "@/components/mode-toggle";
 
 
 export default function Header() {
@@ -14,6 +15,11 @@ export default function Header() {
           <span className="font-bold inline-block">Fuellytics</span>
         </Link>
         <MainNav className="hidden md:flex"/>
+        <div className="flex flex-1 items-center justify-end space-x-4">
+          <nav className="flex items-center space-x-2">
+            <ModeToggle/>
+          </nav>
+        </div>
       </div>
     </header>
   );
