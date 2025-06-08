@@ -3,7 +3,7 @@ export const mockAllUsePrice = [
   {
     currency: "usd",
     name: "Alaska",
-    regular: "3.441",
+    gasoline: "3.441",
     midGrade: "3.656",
     premium: "3.879",
     diesel: "3.550",
@@ -11,7 +11,7 @@ export const mockAllUsePrice = [
   {
     currency: "usd",
     name: "Alabama",
-    regular: "2.766",
+    gasoline: "2.766",
     midGrade: "3.192",
     premium: "3.584",
     diesel: "3.466",
@@ -19,7 +19,7 @@ export const mockAllUsePrice = [
   {
     currency: "usd",
     name: "Arkansas",
-    regular: "2.764",
+    gasoline: "2.764",
     midGrade: "3.168",
     premium: "3.547",
     diesel: "3.284",
@@ -27,7 +27,7 @@ export const mockAllUsePrice = [
   {
     currency: "usd",
     name: "Arizona",
-    regular: "3.176",
+    gasoline: "3.176",
     midGrade: "3.498",
     premium: "3.797",
     diesel: "3.784",
@@ -35,7 +35,7 @@ export const mockAllUsePrice = [
   {
     currency: "usd",
     name: "California",
-    regular: "4.176",
+    gasoline: "4.176",
     midGrade: "4.398",
     premium: "4.597",
     diesel: "4.684",
@@ -43,7 +43,7 @@ export const mockAllUsePrice = [
   {
     currency: "usd",
     name: "Colorado",
-    regular: "3.076",
+    gasoline: "3.076",
     midGrade: "3.398",
     premium: "3.697",
     diesel: "3.584",
@@ -51,7 +51,7 @@ export const mockAllUsePrice = [
   {
     currency: "usd",
     name: "Connecticut",
-    regular: "3.276",
+    gasoline: "3.276",
     midGrade: "3.798",
     premium: "4.097",
     diesel: "3.984",
@@ -59,7 +59,7 @@ export const mockAllUsePrice = [
   {
     currency: "usd",
     name: "Delaware",
-    regular: "3.076",
+    gasoline: "3.076",
     midGrade: "3.498",
     premium: "3.797",
     diesel: "3.684",
@@ -67,7 +67,7 @@ export const mockAllUsePrice = [
   {
     currency: "usd",
     name: "Florida",
-    regular: "3.176",
+    gasoline: "3.176",
     midGrade: "3.598",
     premium: "3.897",
     diesel: "3.784",
@@ -75,7 +75,7 @@ export const mockAllUsePrice = [
   {
     currency: "usd",
     name: "Georgia",
-    regular: "2.976",
+    gasoline: "2.976",
     midGrade: "3.398",
     premium: "3.697",
     diesel: "3.584",
@@ -83,7 +83,7 @@ export const mockAllUsePrice = [
   {
     currency: "usd",
     name: "Hawaii",
-    regular: "4.276",
+    gasoline: "4.276",
     midGrade: "4.498",
     premium: "4.697",
     diesel: "4.784",
@@ -91,7 +91,7 @@ export const mockAllUsePrice = [
   {
     currency: "usd",
     name: "Iowa",
-    regular: "3.076",
+    gasoline: "3.076",
     midGrade: "3.298",
     premium: "3.597",
     diesel: "3.484",
@@ -99,7 +99,7 @@ export const mockAllUsePrice = [
   {
     currency: "usd",
     name: "Idaho",
-    regular: "3.176",
+    gasoline: "3.176",
     midGrade: "3.398",
     premium: "3.697",
     diesel: "3.584",
@@ -107,7 +107,7 @@ export const mockAllUsePrice = [
   {
     currency: "usd",
     name: "Illinois",
-    regular: "3.276",
+    gasoline: "3.276",
     midGrade: "3.598",
     premium: "3.897",
     diesel: "3.784",
@@ -115,7 +115,7 @@ export const mockAllUsePrice = [
   {
     currency: "usd",
     name: "Indiana",
-    regular: "3.076",
+    gasoline: "3.076",
     midGrade: "3.398",
     premium: "3.697",
     diesel: "3.584",
@@ -123,7 +123,7 @@ export const mockAllUsePrice = [
   {
     currency: "usd",
     name: "Kansas",
-    regular: "2.976",
+    gasoline: "2.976",
     midGrade: "3.298",
     premium: "3.597",
     diesel: "3.484",
@@ -131,7 +131,7 @@ export const mockAllUsePrice = [
   {
     currency: "usd",
     name: "Kentucky",
-    regular: "2.876",
+    gasoline: "2.876",
     midGrade: "3.198",
     premium: "3.497",
     diesel: "3.384",
@@ -139,7 +139,7 @@ export const mockAllUsePrice = [
   {
     currency: "usd",
     name: "Louisiana",
-    regular: "2.776",
+    gasoline: "2.776",
     midGrade: "3.098",
     premium: "3.397",
     diesel: "3.284",
@@ -147,7 +147,7 @@ export const mockAllUsePrice = [
   {
     currency: "usd",
     name: "Massachusetts",
-    regular: "3.276",
+    gasoline: "3.276",
     midGrade: "3.598",
     premium: "3.897",
     diesel: "3.784",
@@ -155,7 +155,7 @@ export const mockAllUsePrice = [
   {
     currency: "usd",
     name: "Maryland",
-    regular: "3.176",
+    gasoline: "3.176",
     midGrade: "3.498",
     premium: "3.797",
     diesel: "3.684",
@@ -163,7 +163,7 @@ export const mockAllUsePrice = [
   {
     currency: "usd",
     name: "Maine",
-    regular: "3.276",
+    gasoline: "3.276",
     midGrade: "3.598",
     premium: "3.897",
     diesel: "3.784",
@@ -171,7 +171,7 @@ export const mockAllUsePrice = [
   {
     currency: "usd",
     name: "Michigan",
-    regular: "3.076",
+    gasoline: "3.076",
     midGrade: "3.398",
     premium: "3.697",
     diesel: "3.584",
@@ -179,7 +179,7 @@ export const mockAllUsePrice = [
   {
     currency: "usd",
     name: "Minnesota",
-    regular: "3.076",
+    gasoline: "3.076",
     midGrade: "3.398",
     premium: "3.697",
     diesel: "3.584",
@@ -187,7 +187,7 @@ export const mockAllUsePrice = [
   {
     currency: "usd",
     name: "Missouri",
-    regular: "2.876",
+    gasoline: "2.876",
     midGrade: "3.198",
     premium: "3.497",
     diesel: "3.384",
@@ -195,7 +195,7 @@ export const mockAllUsePrice = [
   {
     currency: "usd",
     name: "Mississippi",
-    regular: "2.776",
+    gasoline: "2.776",
     midGrade: "3.098",
     premium: "3.397",
     diesel: "3.284",
@@ -203,7 +203,7 @@ export const mockAllUsePrice = [
   {
     currency: "usd",
     name: "Montana",
-    regular: "3.176",
+    gasoline: "3.176",
     midGrade: "3.398",
     premium: "3.697",
     diesel: "3.584",
@@ -211,7 +211,7 @@ export const mockAllUsePrice = [
   {
     currency: "usd",
     name: "North Carolina",
-    regular: "2.976",
+    gasoline: "2.976",
     midGrade: "3.298",
     premium: "3.597",
     diesel: "3.484",
@@ -219,7 +219,7 @@ export const mockAllUsePrice = [
   {
     currency: "usd",
     name: "North Dakota",
-    regular: "3.076",
+    gasoline: "3.076",
     midGrade: "3.398",
     premium: "3.697",
     diesel: "3.584",
@@ -227,7 +227,7 @@ export const mockAllUsePrice = [
   {
     currency: "usd",
     name: "Nebraska",
-    regular: "3.076",
+    gasoline: "3.076",
     midGrade: "3.298",
     premium: "3.597",
     diesel: "3.484",
@@ -235,7 +235,7 @@ export const mockAllUsePrice = [
   {
     currency: "usd",
     name: "New Hampshire",
-    regular: "3.176",
+    gasoline: "3.176",
     midGrade: "3.498",
     premium: "3.797",
     diesel: "3.684",
@@ -243,7 +243,7 @@ export const mockAllUsePrice = [
   {
     currency: "usd",
     name: "New Jersey",
-    regular: "3.176",
+    gasoline: "3.176",
     midGrade: "3.498",
     premium: "3.797",
     diesel: "3.684",
@@ -251,7 +251,7 @@ export const mockAllUsePrice = [
   {
     currency: "usd",
     name: "New Mexico",
-    regular: "3.076",
+    gasoline: "3.076",
     midGrade: "3.398",
     premium: "3.697",
     diesel: "3.584",
@@ -259,7 +259,7 @@ export const mockAllUsePrice = [
   {
     currency: "usd",
     name: "Nevada",
-    regular: "3.576",
+    gasoline: "3.576",
     midGrade: "3.798",
     premium: "4.097",
     diesel: "3.984",
@@ -267,7 +267,7 @@ export const mockAllUsePrice = [
   {
     currency: "usd",
     name: "New York",
-    regular: "3.376",
+    gasoline: "3.376",
     midGrade: "3.698",
     premium: "3.997",
     diesel: "3.884",
@@ -275,7 +275,7 @@ export const mockAllUsePrice = [
   {
     currency: "usd",
     name: "Ohio",
-    regular: "3.076",
+    gasoline: "3.076",
     midGrade: "3.398",
     premium: "3.697",
     diesel: "3.584",
@@ -283,7 +283,7 @@ export const mockAllUsePrice = [
   {
     currency: "usd",
     name: "Oklahoma",
-    regular: "2.876",
+    gasoline: "2.876",
     midGrade: "3.198",
     premium: "3.497",
     diesel: "3.384",
@@ -291,7 +291,7 @@ export const mockAllUsePrice = [
   {
     currency: "usd",
     name: "Oregon",
-    regular: "3.576",
+    gasoline: "3.576",
     midGrade: "3.798",
     premium: "4.097",
     diesel: "3.984",
@@ -299,7 +299,7 @@ export const mockAllUsePrice = [
   {
     currency: "usd",
     name: "Pennsylvania",
-    regular: "3.276",
+    gasoline: "3.276",
     midGrade: "3.598",
     premium: "3.897",
     diesel: "3.784",
@@ -307,7 +307,7 @@ export const mockAllUsePrice = [
   {
     currency: "usd",
     name: "Rhode Island",
-    regular: "3.276",
+    gasoline: "3.276",
     midGrade: "3.598",
     premium: "3.897",
     diesel: "3.784",
@@ -315,7 +315,7 @@ export const mockAllUsePrice = [
   {
     currency: "usd",
     name: "South Carolina",
-    regular: "2.876",
+    gasoline: "2.876",
     midGrade: "3.198",
     premium: "3.497",
     diesel: "3.384",
@@ -323,7 +323,7 @@ export const mockAllUsePrice = [
   {
     currency: "usd",
     name: "South Dakota",
-    regular: "3.076",
+    gasoline: "3.076",
     midGrade: "3.398",
     premium: "3.697",
     diesel: "3.584",
@@ -331,7 +331,7 @@ export const mockAllUsePrice = [
   {
     currency: "usd",
     name: "Tennessee",
-    regular: "2.876",
+    gasoline: "2.876",
     midGrade: "3.198",
     premium: "3.497",
     diesel: "3.384",
@@ -339,7 +339,7 @@ export const mockAllUsePrice = [
   {
     currency: "usd",
     name: "Texas",
-    regular: "2.776",
+    gasoline: "2.776",
     midGrade: "3.098",
     premium: "3.397",
     diesel: "3.284",
@@ -347,7 +347,7 @@ export const mockAllUsePrice = [
   {
     currency: "usd",
     name: "Utah",
-    regular: "3.276",
+    gasoline: "3.276",
     midGrade: "3.498",
     premium: "3.797",
     diesel: "3.684",
@@ -355,7 +355,7 @@ export const mockAllUsePrice = [
   {
     currency: "usd",
     name: "Virginia",
-    regular: "2.976",
+    gasoline: "2.976",
     midGrade: "3.298",
     premium: "3.597",
     diesel: "3.484",
@@ -363,7 +363,7 @@ export const mockAllUsePrice = [
   {
     currency: "usd",
     name: "Vermont",
-    regular: "3.276",
+    gasoline: "3.276",
     midGrade: "3.598",
     premium: "3.897",
     diesel: "3.784",
@@ -371,7 +371,7 @@ export const mockAllUsePrice = [
   {
     currency: "usd",
     name: "Washington",
-    regular: "3.576",
+    gasoline: "3.576",
     midGrade: "3.798",
     premium: "4.097",
     diesel: "3.984",
@@ -379,7 +379,7 @@ export const mockAllUsePrice = [
   {
     currency: "usd",
     name: "Wisconsin",
-    regular: "3.076",
+    gasoline: "3.076",
     midGrade: "3.398",
     premium: "3.697",
     diesel: "3.584",
@@ -387,7 +387,7 @@ export const mockAllUsePrice = [
   {
     currency: "usd",
     name: "West Virginia",
-    regular: "3.176",
+    gasoline: "3.176",
     midGrade: "3.498",
     premium: "3.797",
     diesel: "3.684",
@@ -395,7 +395,7 @@ export const mockAllUsePrice = [
   {
     currency: "usd",
     name: "Wyoming",
-    regular: "3.076",
+    gasoline: "3.076",
     midGrade: "3.398",
     premium: "3.697",
     diesel: "3.584",
@@ -405,7 +405,7 @@ export const mockAllUsePrice = [
 // Mock data for cities
 export const mockCitiesData = [
   {
-    regular: "3.195",
+    gasoline: "3.195",
     midGrade: "3.440",
     premium: "3.497",
     diesel: "3.094",
@@ -413,7 +413,7 @@ export const mockCitiesData = [
     state: "Washington",
   },
   {
-    regular: "3.176",
+    gasoline: "3.176",
     midGrade: "3.398",
     premium: "3.507",
     diesel: "3.244",
@@ -421,7 +421,7 @@ export const mockCitiesData = [
     state: "Washington",
   },
   {
-    regular: "3.576",
+    gasoline: "3.576",
     midGrade: "3.798",
     premium: "4.097",
     diesel: "3.984",
@@ -429,7 +429,7 @@ export const mockCitiesData = [
     state: "Washington",
   },
   {
-    regular: "3.476",
+    gasoline: "3.476",
     midGrade: "3.698",
     premium: "3.997",
     diesel: "3.884",
@@ -437,7 +437,7 @@ export const mockCitiesData = [
     state: "Washington",
   },
   {
-    regular: "3.376",
+    gasoline: "3.376",
     midGrade: "3.598",
     premium: "3.897",
     diesel: "3.784",
@@ -445,7 +445,7 @@ export const mockCitiesData = [
     state: "Washington",
   },
   {
-    regular: "4.176",
+    gasoline: "4.176",
     midGrade: "4.398",
     premium: "4.597",
     diesel: "4.684",
@@ -453,7 +453,7 @@ export const mockCitiesData = [
     state: "California",
   },
   {
-    regular: "4.076",
+    gasoline: "4.076",
     midGrade: "4.298",
     premium: "4.497",
     diesel: "4.584",
@@ -461,7 +461,7 @@ export const mockCitiesData = [
     state: "California",
   },
   {
-    regular: "3.976",
+    gasoline: "3.976",
     midGrade: "4.198",
     premium: "4.397",
     diesel: "4.484",
@@ -469,7 +469,7 @@ export const mockCitiesData = [
     state: "California",
   },
   {
-    regular: "4.276",
+    gasoline: "4.276",
     midGrade: "4.498",
     premium: "4.697",
     diesel: "4.784",
@@ -477,7 +477,7 @@ export const mockCitiesData = [
     state: "California",
   },
   {
-    regular: "2.776",
+    gasoline: "2.776",
     midGrade: "3.098",
     premium: "3.397",
     diesel: "3.284",
@@ -485,7 +485,7 @@ export const mockCitiesData = [
     state: "Texas",
   },
   {
-    regular: "2.676",
+    gasoline: "2.676",
     midGrade: "2.998",
     premium: "3.297",
     diesel: "3.184",
@@ -493,7 +493,7 @@ export const mockCitiesData = [
     state: "Texas",
   },
   {
-    regular: "2.876",
+    gasoline: "2.876",
     midGrade: "3.198",
     premium: "3.497",
     diesel: "3.384",
@@ -501,7 +501,7 @@ export const mockCitiesData = [
     state: "Texas",
   },
   {
-    regular: "2.576",
+    gasoline: "2.576",
     midGrade: "2.898",
     premium: "3.197",
     diesel: "3.084",
@@ -509,7 +509,7 @@ export const mockCitiesData = [
     state: "Texas",
   },
   {
-    regular: "3.176",
+    gasoline: "3.176",
     midGrade: "3.598",
     premium: "3.897",
     diesel: "3.784",
@@ -517,7 +517,7 @@ export const mockCitiesData = [
     state: "Florida",
   },
   {
-    regular: "3.076",
+    gasoline: "3.076",
     midGrade: "3.498",
     premium: "3.797",
     diesel: "3.684",
@@ -525,7 +525,7 @@ export const mockCitiesData = [
     state: "Florida",
   },
   {
-    regular: "3.276",
+    gasoline: "3.276",
     midGrade: "3.698",
     premium: "3.997",
     diesel: "3.884",
@@ -533,7 +533,7 @@ export const mockCitiesData = [
     state: "Florida",
   },
   {
-    regular: "3.376",
+    gasoline: "3.376",
     midGrade: "3.698",
     premium: "3.997",
     diesel: "3.884",
@@ -541,7 +541,7 @@ export const mockCitiesData = [
     state: "New York",
   },
   {
-    regular: "3.276",
+    gasoline: "3.276",
     midGrade: "3.598",
     premium: "3.897",
     diesel: "3.784",
@@ -549,7 +549,7 @@ export const mockCitiesData = [
     state: "New York",
   },
   {
-    regular: "3.176",
+    gasoline: "3.176",
     midGrade: "3.498",
     premium: "3.797",
     diesel: "3.684",

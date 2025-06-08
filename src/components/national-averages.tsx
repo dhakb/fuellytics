@@ -12,7 +12,7 @@ interface NationalAveragesProps {
   allUsaPrice: {
     currency: string
     name: string
-    regular: string
+    gasoline: string
     midGrade: string
     premium: string
     diesel: string
@@ -20,6 +20,7 @@ interface NationalAveragesProps {
 }
 
 export function NationalAverages({fuelType, allUsaPrice}: NationalAveragesProps) {
+  console.log(allUsaPrice)
   const prices = allUsaPrice.map((state) => Number.parseFloat(state[fuelType as keyof typeof state] as string));
   const averagePrice = prices.reduce((sum, price) => sum + price, 0) / prices.length;
 
@@ -51,7 +52,7 @@ export function NationalAverages({fuelType, allUsaPrice}: NationalAveragesProps)
 
   const getFuelTypeDisplay = () => {
     switch (fuelType) {
-      case "regular":
+      case "gasoline":
         return "Regular Gasoline";
       case "midGrade":
         return "Mid-Grade Gasoline";
@@ -66,7 +67,7 @@ export function NationalAverages({fuelType, allUsaPrice}: NationalAveragesProps)
 
   const getFuelTypeColor = () => {
     switch (fuelType) {
-      case "regular":
+      case "gasoline":
         return "#3b82f6";
       case "midGrade":
         return "#10b981";

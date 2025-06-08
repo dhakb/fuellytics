@@ -4,7 +4,7 @@ import { mockAllUsePrice } from "@/lib/mock-data";
 
 
 export function TopStatesCards({allUsaPrice = mockAllUsePrice}) {
-  const sortedStates = [...allUsaPrice].sort((a, b) => Number.parseFloat(a.regular) - Number.parseFloat(b.regular));
+  const sortedStates = [...allUsaPrice].sort((a, b) => Number.parseFloat(a.gasoline) - Number.parseFloat(b.gasoline));
 
   const cheapestStates = sortedStates.slice(0, 5);
   const expensiveStates = sortedStates.slice(-5).reverse();
@@ -17,7 +17,7 @@ export function TopStatesCards({allUsaPrice = mockAllUsePrice}) {
           {cheapestStates.map((state) => (
             <div key={state.name} className="flex items-center justify-between text-sm">
               <span>{state.name}</span>
-              <span className="font-medium text-green-600">${Number.parseFloat(state.regular).toFixed(2)}</span>
+              <span className="font-medium text-green-600">${Number.parseFloat(state.gasoline).toFixed(2)}</span>
             </div>
           ))}
         </div>
@@ -29,7 +29,7 @@ export function TopStatesCards({allUsaPrice = mockAllUsePrice}) {
           {expensiveStates.map((state, index) => (
             <div key={state.name} className="flex items-center justify-between text-sm">
               <span>{state.name}</span>
-              <span className="font-medium text-red-600">${Number.parseFloat(state.regular).toFixed(2)}</span>
+              <span className="font-medium text-red-600">${Number.parseFloat(state.gasoline).toFixed(2)}</span>
             </div>
           ))}
         </div>
