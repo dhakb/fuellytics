@@ -5,8 +5,10 @@ import { ArrowDown, ArrowUp, FuelIcon as GasPump, Info } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Skeleton } from "@/components/ui/skeleton";
 import { TopStatesCards } from "@/components/top-states-cards";
+import { NationalAverages } from "@/components/national-averages";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import { mockAllUsePrice } from "@/lib/mock-data";
 
 
 export const metadata: Metadata = {
@@ -112,6 +114,22 @@ export default function Home() {
               </CardContent>
             </Card>
           </div>
+        </TabsContent>
+
+        <TabsContent value="regular" className="space-y-4">
+          <NationalAverages fuelType="regular" allUsaPrice={mockAllUsePrice}/>
+        </TabsContent>
+
+        <TabsContent value="midgrade" className="space-y-4">
+          <NationalAverages fuelType="midGrade" allUsaPrice={mockAllUsePrice}/>
+        </TabsContent>
+
+        <TabsContent value="premium" className="space-y-4">
+          <NationalAverages fuelType="premium" allUsaPrice={mockAllUsePrice}/>
+        </TabsContent>
+
+        <TabsContent value="diesel" className="space-y-4">
+          <NationalAverages fuelType="diesel" allUsaPrice={mockAllUsePrice}/>
         </TabsContent>
       </Tabs>
     </main>
