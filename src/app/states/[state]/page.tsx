@@ -5,6 +5,7 @@ import { ArrowLeft, ChevronRight, Download, Share2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Skeleton } from "@/components/ui/skeleton";
 import StateOverview from "@/components/state-overview";
+import CitiesDataTable from "@/components/cities-data-table";
 import PriceRangeChartsByState from "@/components/price-range-charts-by-state";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import CityPriceComparisonByState from "@/components/city-price-comparison-by-state";
@@ -37,7 +38,7 @@ export default async function Page({params}: any) {
 
   const stateData: StateDataWithCities = mockDataByStateWithCities[stateCode as keyof typeof mockDataByStateWithCities];
   const {state, cities} = stateData;
-  console.log(stateData);
+  // console.log(stateData);
   return (
     <main className="flex-1 space-y-4 p-4 md:p-8 pt-6">
       <div className="flex items-center justify-between">
@@ -116,6 +117,20 @@ export default async function Page({params}: any) {
               </CardFooter>
             </Card>
           </div>
+        </TabsContent>
+
+        <TabsContent value="cities" className="space-y-4">
+          <Card>
+            <CardHeader>
+              <CardTitle>Cities in {state.name}</CardTitle>
+              <CardDescription>Fuel prices for all cities in {state.name}</CardDescription>
+            </CardHeader>
+            <CardContent>
+              <Suspense fallback={<Skeleton className="h-[400px] w-full"/>}>
+                <CitiesDataTable cities={cities}/>
+              </Suspense>
+            </CardContent>
+          </Card>
         </TabsContent>
       </Tabs>
     </main>
