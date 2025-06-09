@@ -39,7 +39,7 @@ export default function CityPriceComparison({cities, state}: CityPriceComparison
     <ResponsiveContainer width="100%" height={300}>
       <BarChart data={chartData}>
         <CartesianGrid strokeDasharray="3 3"/>
-        <XAxis dataKey="name" angle={-45} textAnchor="end" height={70}/>
+        <XAxis dataKey="name" angle={-25} fontSize={14} textAnchor="end" height={70} tickSize={10}/>
         <YAxis tickFormatter={(value) => `$${value.toFixed(2)}`}/>
         <Tooltip formatter={(value: number, name: string) => [`$${value.toFixed(2)}`, name]}/>
         <Bar dataKey="price" fill="#3b82f6" name="City Price"/>
