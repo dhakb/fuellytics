@@ -9,7 +9,7 @@ export default function Header() {
   return (
     <header
       className="sticky top-0 z-50 w-full border-b bg-background/98 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-      <div className="container flex h-16 items-center">
+      <div className="flex h-16 items-centet pl-10 pr-10">
         <Link href="/" className="flex items-center space-x-2 mr-6">
           <Image src="/logo.png" alt="logo" width={30} height={30}/>
           <span className="font-bold inline-block">Fuellytics</span>
