@@ -66,13 +66,13 @@ export default function UsMapTooltip({state, fuelType, priceStats, showTrends, p
       exit={{opacity: 0, scale: 0.8, y: 10}}
       className="absolute z-50 pointer-events-none"
       style={{
-        left: position.x,
-        top: position.y,
+        left: position.x + 30,
+        top: position.y - 70,
         transform: "translate(-50%, -100%)",
         marginTop: "-15px"
       }}
     >
-      <Card className="w-64 h-64 shadow-xl border-2 bg-white dark:bg-gray-900">
+      <Card className="w-58 h-60 shadow-xl border-2 bg-white dark:bg-gray-900 p-0">
         <CardContent className="p-4">
           <div className="space-y-3">
             <div className="flex items-center justify-between">
@@ -127,8 +127,10 @@ export default function UsMapTooltip({state, fuelType, priceStats, showTrends, p
       </Card>
 
       <div
-        className="absolute left-1/2 transform -translate-x-1/2 w-0 h-0 border-l-8 border-r-8 border-t-8 border-l-transparent border-r-transparent border-t-white dark:border-t-gray-900"
-        style={{top: "100%"}}
+        className="absolute top-1/2 -left-3 transform -translate-y-1/2 w-0 h-0
+             border-t-8 border-b-8 border-r-8
+             border-t-transparent border-b-transparent
+             border-r-gray-200 dark:border-r-gray-900"
       />
     </motion.div>
   );
