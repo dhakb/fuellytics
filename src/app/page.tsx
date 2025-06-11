@@ -1,6 +1,6 @@
 import { Suspense } from "react";
 import type { Metadata } from "next";
-import { ArrowDown, ArrowUp, FuelIcon as GasPump, Info } from "lucide-react";
+import { ArrowDown, ArrowUp, ChevronRight, FuelIcon as GasPump, Info } from "lucide-react";
 
 import { Button } from "@/components/ui/button";
 import { Skeleton } from "@/components/ui/skeleton";
@@ -10,6 +10,7 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { mockAllUsePrice } from "@/lib/mock-data";
 import USMap from "@/components/us-map";
+import Link from "next/link";
 
 
 export const metadata: Metadata = {
@@ -109,15 +110,22 @@ export default function Home() {
                 <CardDescription>Average regular gas prices by state</CardDescription>
               </CardHeader>
               <CardContent className="pl-2">
-                <Suspense fallback={<Skeleton className="h-[400px] w-full" />}>
-                  <USMap fuelType="gasoline" />
+                <Suspense fallback={<Skeleton className="h-[400px] w-full"/>}>
+                  <USMap fuelType="gasoline"/>
                 </Suspense>
               </CardContent>
             </Card>
             <Card className="col-span-3">
               <CardHeader>
-                <CardTitle>Top 5 States</CardTitle>
-                <CardDescription>Cheapest and most expensive states</CardDescription>
+                <div className="flex items-center justify-between">
+                  <div>
+                    <CardTitle>Top 5 States</CardTitle>
+                    <CardDescription>Cheapest and most expensive states</CardDescription>
+                  </div>
+                  <Link href="/states" className="flex items-center text-sm text-primary hover:underline">
+                    View all <ChevronRight className="h-4 w-4 ml-1"/>
+                  </Link>
+                </div>
               </CardHeader>
               <CardContent>
                 <Suspense fallback={<Skeleton className="h-[400px] w-full"/>}>
