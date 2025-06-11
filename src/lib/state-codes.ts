@@ -57,6 +57,6 @@ export function getStateNameByCode(code: string): string | undefined {
 }
 
 export function getStateCodeByName(name: string): string | undefined {
-  const entry = Object.entries(stateMapping).find(([_, stateName]) => stateName.toLowerCase() === name.toLowerCase())
+  const entry = Object.entries(stateMapping).find(([, stateName]) => stateName.toLowerCase() === name.toLowerCase())
   return entry?.[0]
 }

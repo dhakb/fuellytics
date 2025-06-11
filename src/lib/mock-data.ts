@@ -403,211 +403,211 @@ export const mockAllUsePrice = [
 ];
 
 // Mock data for cities
-export const mockCitiesData = [
-  {
-    gasoline: "3.195",
-    midGrade: "3.440",
-    premium: "3.497",
-    diesel: "3.094",
-    name: "Bellingham",
-    state: "Washington"
-  },
-  {
-    gasoline: "3.176",
-    midGrade: "3.398",
-    premium: "3.507",
-    diesel: "3.244",
-    name: "Bremerton",
-    state: "Washington"
-  },
-  {
-    gasoline: "3.576",
-    midGrade: "3.798",
-    premium: "4.097",
-    diesel: "3.984",
-    name: "Seattle",
-    state: "Washington"
-  },
-  {
-    gasoline: "3.476",
-    midGrade: "3.698",
-    premium: "3.997",
-    diesel: "3.884",
-    name: "Spokane",
-    state: "Washington"
-  },
-  {
-    gasoline: "3.376",
-    midGrade: "3.598",
-    premium: "3.897",
-    diesel: "3.784",
-    name: "Tacoma",
-    state: "Washington"
-  },
-  {
-    gasoline: "4.176",
-    midGrade: "4.398",
-    premium: "4.597",
-    diesel: "4.684",
-    name: "Los Angeles",
-    state: "California"
-  },
-  {
-    gasoline: "4.076",
-    midGrade: "4.298",
-    premium: "4.497",
-    diesel: "4.584",
-    name: "San Francisco",
-    state: "California"
-  },
-  {
-    gasoline: "3.976",
-    midGrade: "4.198",
-    premium: "4.397",
-    diesel: "4.484",
-    name: "San Diego",
-    state: "California"
-  },
-  {
-    gasoline: "4.276",
-    midGrade: "4.498",
-    premium: "4.697",
-    diesel: "4.784",
-    name: "Sacramento",
-    state: "California"
-  },
-  {
-    gasoline: "2.776",
-    midGrade: "3.098",
-    premium: "3.397",
-    diesel: "3.284",
-    name: "Houston",
-    state: "Texas"
-  },
-  {
-    gasoline: "2.676",
-    midGrade: "2.998",
-    premium: "3.297",
-    diesel: "3.184",
-    name: "Dallas",
-    state: "Texas"
-  },
-  {
-    gasoline: "2.876",
-    midGrade: "3.198",
-    premium: "3.497",
-    diesel: "3.384",
-    name: "Austin",
-    state: "Texas"
-  },
-  {
-    gasoline: "2.576",
-    midGrade: "2.898",
-    premium: "3.197",
-    diesel: "3.084",
-    name: "San Antonio",
-    state: "Texas"
-  },
-  {
-    gasoline: "3.176",
-    midGrade: "3.598",
-    premium: "3.897",
-    diesel: "3.784",
-    name: "Miami",
-    state: "Florida"
-  },
-  {
-    gasoline: "3.076",
-    midGrade: "3.498",
-    premium: "3.797",
-    diesel: "3.684",
-    name: "Orlando",
-    state: "Florida"
-  },
-  {
-    gasoline: "3.276",
-    midGrade: "3.698",
-    premium: "3.997",
-    diesel: "3.884",
-    name: "Tampa",
-    state: "Florida"
-  },
-  {
-    gasoline: "3.376",
-    midGrade: "3.698",
-    premium: "3.997",
-    diesel: "3.884",
-    name: "New York",
-    state: "New York"
-  },
-  {
-    gasoline: "3.276",
-    midGrade: "3.598",
-    premium: "3.897",
-    diesel: "3.784",
-    name: "Buffalo",
-    state: "New York"
-  },
-  {
-    gasoline: "3.176",
-    midGrade: "3.498",
-    premium: "3.797",
-    diesel: "3.684",
-    name: "Albany",
-    state: "New York"
-  }
-];
+// export const mockCitiesData = [
+//   {
+//     gasoline: "3.195",
+//     midGrade: "3.440",
+//     premium: "3.497",
+//     diesel: "3.094",
+//     name: "Bellingham",
+//     state: "Washington"
+//   },
+//   {
+//     gasoline: "3.176",
+//     midGrade: "3.398",
+//     premium: "3.507",
+//     diesel: "3.244",
+//     name: "Bremerton",
+//     state: "Washington"
+//   },
+//   {
+//     gasoline: "3.576",
+//     midGrade: "3.798",
+//     premium: "4.097",
+//     diesel: "3.984",
+//     name: "Seattle",
+//     state: "Washington"
+//   },
+//   {
+//     gasoline: "3.476",
+//     midGrade: "3.698",
+//     premium: "3.997",
+//     diesel: "3.884",
+//     name: "Spokane",
+//     state: "Washington"
+//   },
+//   {
+//     gasoline: "3.376",
+//     midGrade: "3.598",
+//     premium: "3.897",
+//     diesel: "3.784",
+//     name: "Tacoma",
+//     state: "Washington"
+//   },
+//   {
+//     gasoline: "4.176",
+//     midGrade: "4.398",
+//     premium: "4.597",
+//     diesel: "4.684",
+//     name: "Los Angeles",
+//     state: "California"
+//   },
+//   {
+//     gasoline: "4.076",
+//     midGrade: "4.298",
+//     premium: "4.497",
+//     diesel: "4.584",
+//     name: "San Francisco",
+//     state: "California"
+//   },
+//   {
+//     gasoline: "3.976",
+//     midGrade: "4.198",
+//     premium: "4.397",
+//     diesel: "4.484",
+//     name: "San Diego",
+//     state: "California"
+//   },
+//   {
+//     gasoline: "4.276",
+//     midGrade: "4.498",
+//     premium: "4.697",
+//     diesel: "4.784",
+//     name: "Sacramento",
+//     state: "California"
+//   },
+//   {
+//     gasoline: "2.776",
+//     midGrade: "3.098",
+//     premium: "3.397",
+//     diesel: "3.284",
+//     name: "Houston",
+//     state: "Texas"
+//   },
+//   {
+//     gasoline: "2.676",
+//     midGrade: "2.998",
+//     premium: "3.297",
+//     diesel: "3.184",
+//     name: "Dallas",
+//     state: "Texas"
+//   },
+//   {
+//     gasoline: "2.876",
+//     midGrade: "3.198",
+//     premium: "3.497",
+//     diesel: "3.384",
+//     name: "Austin",
+//     state: "Texas"
+//   },
+//   {
+//     gasoline: "2.576",
+//     midGrade: "2.898",
+//     premium: "3.197",
+//     diesel: "3.084",
+//     name: "San Antonio",
+//     state: "Texas"
+//   },
+//   {
+//     gasoline: "3.176",
+//     midGrade: "3.598",
+//     premium: "3.897",
+//     diesel: "3.784",
+//     name: "Miami",
+//     state: "Florida"
+//   },
+//   {
+//     gasoline: "3.076",
+//     midGrade: "3.498",
+//     premium: "3.797",
+//     diesel: "3.684",
+//     name: "Orlando",
+//     state: "Florida"
+//   },
+//   {
+//     gasoline: "3.276",
+//     midGrade: "3.698",
+//     premium: "3.997",
+//     diesel: "3.884",
+//     name: "Tampa",
+//     state: "Florida"
+//   },
+//   {
+//     gasoline: "3.376",
+//     midGrade: "3.698",
+//     premium: "3.997",
+//     diesel: "3.884",
+//     name: "New York",
+//     state: "New York"
+//   },
+//   {
+//     gasoline: "3.276",
+//     midGrade: "3.598",
+//     premium: "3.897",
+//     diesel: "3.784",
+//     name: "Buffalo",
+//     state: "New York"
+//   },
+//   {
+//     gasoline: "3.176",
+//     midGrade: "3.498",
+//     premium: "3.797",
+//     diesel: "3.684",
+//     name: "Albany",
+//     state: "New York"
+//   }
+// ];
 
 
-const mockStateDateIncludingCities = {
-  "wa": {
-    "state": {
-      "name": "Washington",
-      "regular": "$3.217",
-      "midGrade": "$3.422",
-      "premium": "$3.575",
-      "diesel": "$3.284"
-    },
-    "cities": [
-      {
-        "regular": "$3.195",
-        "midGrade": "$3.440",
-        "premium": "$3.497",
-        "diesel": "$3.094",
-        "name": "Bellingham"
-      },
-      {
-        "regular": "$3.176",
-        "midGrade": "$3.398",
-        "premium": "$3.507",
-        "diesel": "$3.244",
-        "name": "Bremerton"
-      }
-    ]
-  },
-  "ca": {
-    "state": {
-      "name": "California",
-      "regular": "$3.217",
-      "midGrade": "$3.422",
-      "premium": "$3.575",
-      "diesel": "$3.284"
-    },
-    "cities": [
-      {
-        "regular": "4.076",
-        "midGrade": "4.298",
-        "premium": "4.497",
-        "diesel": "4.584",
-        "name": "San Francisco"
-      },
-      {
-        "regular": "3.976",
-        "midGrade": "4.198",
-        "premium": "4.397",
-        "diesel": "4.484",
-        "name": "San Diego"
-      }
-    ]
-  }
-};
+// const mockStateDateIncludingCities = {
+//   "wa": {
+//     "state": {
+//       "name": "Washington",
+//       "regular": "$3.217",
+//       "midGrade": "$3.422",
+//       "premium": "$3.575",
+//       "diesel": "$3.284"
+//     },
+//     "cities": [
+//       {
+//         "regular": "$3.195",
+//         "midGrade": "$3.440",
+//         "premium": "$3.497",
+//         "diesel": "$3.094",
+//         "name": "Bellingham"
+//       },
+//       {
+//         "regular": "$3.176",
+//         "midGrade": "$3.398",
+//         "premium": "$3.507",
+//         "diesel": "$3.244",
+//         "name": "Bremerton"
+//       }
+//     ]
+//   },
+//   "ca": {
+//     "state": {
+//       "name": "California",
+//       "regular": "$3.217",
+//       "midGrade": "$3.422",
+//       "premium": "$3.575",
+//       "diesel": "$3.284"
+//     },
+//     "cities": [
+//       {
+//         "regular": "4.076",
+//         "midGrade": "4.298",
+//         "premium": "4.497",
+//         "diesel": "4.584",
+//         "name": "San Francisco"
+//       },
+//       {
+//         "regular": "3.976",
+//         "midGrade": "4.198",
+//         "premium": "4.397",
+//         "diesel": "4.484",
+//         "name": "San Diego"
+//       }
+//     ]
+//   }
+// };

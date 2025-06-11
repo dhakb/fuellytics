@@ -34,12 +34,12 @@ interface StateDataWithCities {
   cities: CityData[];
 }
 
-export default async function Page({params}: any) {
+export default async function Page({params}:  {params: Promise<{state: string}>}) {
   const {state: stateCode}: { state: string } = await params;
 
   const stateData: StateDataWithCities = mockDataByStateWithCities[stateCode as keyof typeof mockDataByStateWithCities];
   const {state, cities} = stateData;
-  // console.log(stateData);
+
   return (
     <main className="flex-1 space-y-4 p-4 md:p-8 pt-6">
       <div className="flex items-center justify-between">

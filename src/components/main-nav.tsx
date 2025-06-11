@@ -7,7 +7,9 @@ import { usePathname } from "next/navigation";
 import { cn } from "@/lib/utils";
 
 
-interface MainNavProps extends React.HTMLAttributes<HTMLElement> {}
+interface MainNavProps extends React.HTMLAttributes<HTMLElement> {
+  className: string
+}
 
 export function MainNav({className, ...props}: MainNavProps) {
   const pathname = usePathname();
