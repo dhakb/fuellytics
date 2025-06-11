@@ -9,6 +9,7 @@ import { NationalAverages } from "@/components/national-averages";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { mockAllUsePrice } from "@/lib/mock-data";
+import USMap from "@/components/us-map";
 
 
 export const metadata: Metadata = {
@@ -102,6 +103,17 @@ export default function Home() {
           </div>
 
           <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-7">
+            <Card className="col-span-4">
+              <CardHeader>
+                <CardTitle>US Fuel Price Map</CardTitle>
+                <CardDescription>Average regular gas prices by state</CardDescription>
+              </CardHeader>
+              <CardContent className="pl-2">
+                <Suspense fallback={<Skeleton className="h-[400px] w-full" />}>
+                  <USMap fuelType="gasoline" />
+                </Suspense>
+              </CardContent>
+            </Card>
             <Card className="col-span-3">
               <CardHeader>
                 <CardTitle>Top 5 States</CardTitle>
