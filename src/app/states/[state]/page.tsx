@@ -2,7 +2,10 @@ import Link from "next/link";
 import { Suspense } from "react";
 import { ArrowLeft, ChevronRight, Download, Share2 } from "lucide-react";
 
+import type { StateDataWithCities } from "@/lib/types";
+
 import { Button } from "@/components/ui/button";
+import ComingSoon from "@/components/coming-soon";
 import { Skeleton } from "@/components/ui/skeleton";
 import StateOverview from "@/components/state-overview";
 import CitiesDataTable from "@/components/cities-data-table";
@@ -10,29 +13,8 @@ import PriceRangeChartsByState from "@/components/price-range-charts-by-state";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import CityPriceComparisonByState from "@/components/city-price-comparison-by-state";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
-
 import { mockDataByStateWithCities } from "@/lib/mock-data-by-state-with-cities";
-import ComingSoon from "@/components/coming-soon";
 
-
-interface CityData {
-  name: string;
-  regular: string;
-  midGrade: string;
-  premium: string;
-  diesel: string;
-}
-
-interface StateDataWithCities {
-  state: {
-    name: string
-    regular: string
-    midGrade: string
-    premium: string
-    diesel: string
-  };
-  cities: CityData[];
-}
 
 export default async function Page({params}:  {params: Promise<{state: string}>}) {
   const {state: stateCode}: { state: string } = await params;

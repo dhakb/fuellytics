@@ -6,17 +6,12 @@ import { Bar, BarChart, CartesianGrid, Cell, Legend, ResponsiveContainer, Toolti
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 
+import type { StateData } from "@/lib/types";
+
 
 interface NationalAveragesProps {
   fuelType: string;
-  allUsaPrice: {
-    currency: string
-    name: string
-    gasoline: string
-    midGrade: string
-    premium: string
-    diesel: string
-  }[];
+  allUsaPrice: StateData[];
 }
 
 export function NationalAverages({fuelType, allUsaPrice}: NationalAveragesProps) {
@@ -145,7 +140,7 @@ export function NationalAverages({fuelType, allUsaPrice}: NationalAveragesProps)
             <ResponsiveContainer width="100%" height="100%">
               <BarChart data={chartData} margin={{top: 20, right: 30, left: 20, bottom: 60}}>
                 <CartesianGrid strokeDasharray="1 1"/>
-                <XAxis dataKey="name" angle={-55} textAnchor="end" height={70} />
+                <XAxis dataKey="name" angle={-55} textAnchor="end" height={70}/>
                 <YAxis domain={["auto", "auto"]} tickFormatter={(value: number) => `$${value.toFixed(2)}`}/>
                 <Tooltip
                   formatter={(value: number) => [`$${value.toFixed(2)}`, "Price"]}

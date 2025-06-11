@@ -3,35 +3,29 @@
 import { useState } from "react";
 import {
   type ColumnDef,
-  type ColumnFiltersState,
   type SortingState,
+  type ColumnFiltersState,
   flexRender,
+  useReactTable,
   getCoreRowModel,
-  getFilteredRowModel,
-  getPaginationRowModel,
   getSortedRowModel,
-  useReactTable
+  getFilteredRowModel,
+  getPaginationRowModel
 } from "@tanstack/react-table";
 import { ArrowUpDown, ChevronDown, Search } from "lucide-react";
 
-import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
 import {
   DropdownMenu,
-  DropdownMenuCheckboxItem,
+  DropdownMenuTrigger,
   DropdownMenuContent,
-  DropdownMenuTrigger
+  DropdownMenuCheckboxItem
 } from "@/components/ui/dropdown-menu";
+import { Input } from "@/components/ui/input";
+import { Button } from "@/components/ui/button";
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
 
+import type { CityData as City } from "@/lib/types";
 
-interface City {
-  name: string;
-  regular: string;
-  midGrade: string;
-  premium: string;
-  diesel: string;
-}
 
 interface CitiesDataTableProps {
   cities: City[];

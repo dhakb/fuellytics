@@ -3,27 +3,10 @@
 import { motion } from "framer-motion";
 import { TrendingUp, TrendingDown, Minus } from "lucide-react";
 
-import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
+import { Card, CardContent } from "@/components/ui/card";
+import type { FuelType, StateData, PriceStats } from "@/lib/types";
 
-
-type FuelType = "gasoline" | "midGrade" | "premium" | "diesel"
-
-export interface StateData {
-  name: string;
-  gasoline: string;
-  midGrade: string;
-  premium: string;
-  diesel: string;
-  currency: string;
-}
-
-interface PriceStats {
-  min: number;
-  max: number;
-  avg: number;
-  range: number;
-}
 
 interface EnhancedTooltipProps {
   state: StateData;

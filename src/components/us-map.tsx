@@ -9,8 +9,8 @@ import { mockAllUsePrice } from "@/lib/mock-data";
 import { getStateNameByCode } from "@/lib/state-codes";
 import USMapTooltip from "@/components/us-map-tooltip";
 
+import type { FuelType } from "@/lib/types";
 
-type FuelType = "gasoline" | "midGrade" | "premium" | "diesel"
 
 interface USAMapProps {
   fuelType?: FuelType;

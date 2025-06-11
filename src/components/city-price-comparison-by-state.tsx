@@ -1,23 +1,10 @@
 "use client";
 
 import { Bar, BarChart, CartesianGrid, ResponsiveContainer, Tooltip, XAxis, YAxis } from "recharts";
+import type { StateDataWithCities, CityData as City } from "@/lib/types";
 
 
-interface State {
-  name: string;
-  regular: string;
-  midGrade: string;
-  premium: string;
-  diesel: string;
-}
-
-interface City {
-  name: string;
-  regular: string;
-  midGrade: string;
-  premium: string;
-  diesel: string;
-}
+type State = StateDataWithCities["state"];
 
 interface CityPriceComparisonProps {
   cities: City[];

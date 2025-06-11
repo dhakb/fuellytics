@@ -1,7 +1,9 @@
+import Link from "next/link";
 import { Suspense } from "react";
 import type { Metadata } from "next";
 import { ArrowDown, ArrowUp, ChevronRight, FuelIcon as GasPump, Info } from "lucide-react";
 
+import USMap from "@/components/us-map";
 import { Button } from "@/components/ui/button";
 import { Skeleton } from "@/components/ui/skeleton";
 import { TopStatesCards } from "@/components/top-states-cards";
@@ -9,8 +11,6 @@ import { NationalAverages } from "@/components/national-averages";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { mockAllUsePrice } from "@/lib/mock-data";
-import USMap from "@/components/us-map";
-import Link from "next/link";
 
 
 export const metadata: Metadata = {

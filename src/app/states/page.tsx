@@ -1,12 +1,12 @@
-import type { Metadata } from "next";
-import { Button } from "@/components/ui/button";
-import { Download, Filter } from "lucide-react";
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Suspense } from "react";
-import { Skeleton } from "@/components/ui/skeleton";
+import type { Metadata } from "next";
+import { Download, Filter } from "lucide-react";
 
-import { mockAllUsePrice } from "@/lib/mock-data";
+import { Button } from "@/components/ui/button";
+import { Skeleton } from "@/components/ui/skeleton";
 import StatesDataTable from "@/components/states-data-table";
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import { mockAllUsePrice } from "@/lib/mock-data";
 
 
 export const metadata: Metadata = {

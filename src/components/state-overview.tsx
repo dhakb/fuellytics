@@ -1,14 +1,10 @@
 import { FuelIcon as GasPump } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 
+import type { StateDataWithCities } from "@/lib/types";
 
-interface StateData {
-  name: string;
-  regular: string;
-  midGrade: string;
-  premium: string;
-  diesel: string;
-}
+
+type StateData = StateDataWithCities["state"];
 
 interface StateOverviewProps {
   stateData: StateData;

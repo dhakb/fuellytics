@@ -1,7 +1,8 @@
 "use client";
 
+import { useState } from "react";
+import { useRouter } from "next/navigation";
 import { ArrowUpDown, ChevronDown, ExternalLink, Search } from "lucide-react";
-import { Input } from "@/components/ui/input";
 import {
   type ColumnDef,
   type ColumnFiltersState,
@@ -13,12 +14,9 @@ import {
   useReactTable, flexRender
 } from "@tanstack/react-table";
 
-import { useState } from "react";
-import { useRouter } from "next/navigation";
-
-
-import { getStateCodeByName } from "@/lib/state-codes";
+import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
+import { getStateCodeByName } from "@/lib/state-codes";
 import {
   DropdownMenu,
   DropdownMenuCheckboxItem,
@@ -27,15 +25,8 @@ import {
 } from "@/components/ui/dropdown-menu";
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
 
+import type { StateData } from "@/lib/types";
 
-interface StateData {
-  currency: string;
-  name: string;
-  gasoline: string;
-  midGrade: string;
-  premium: string;
-  diesel: string;
-}
 
 interface StatesDataTableProps {
   allUsaPrice: StateData[];
