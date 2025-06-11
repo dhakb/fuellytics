@@ -12,6 +12,7 @@ import CityPriceComparisonByState from "@/components/city-price-comparison-by-st
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 
 import { mockDataByStateWithCities } from "@/lib/mock-data-by-state-with-cities";
+import ComingSoon from "@/components/coming-soon";
 
 
 interface CityData {
@@ -129,6 +130,22 @@ export default async function Page({params}: any) {
               <Suspense fallback={<Skeleton className="h-[400px] w-full"/>}>
                 <CitiesDataTable cities={cities}/>
               </Suspense>
+            </CardContent>
+          </Card>
+        </TabsContent>
+
+        <TabsContent value="comparison">
+          <Card>
+            <CardContent>
+              <ComingSoon/>
+            </CardContent>
+          </Card>
+        </TabsContent>
+
+        <TabsContent value="trends">
+          <Card>
+            <CardContent>
+              <ComingSoon/>
             </CardContent>
           </Card>
         </TabsContent>
