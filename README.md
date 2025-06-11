@@ -1,0 +1,2 @@
+### Fuellytics ⛽
+Fuel price analytics platform for the US. Insights into gasoline, diesel, and other fuel types. Easy-to-read visualizations and detailed stats — perfect whether you're planning a road trip or just trying to save at the pump.
