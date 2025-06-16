@@ -8,6 +8,8 @@ import type { FuelType } from "@/lib/types";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { mockAllUsePrice } from "@/lib/mock-data";
+import ComparisonChart from "@/components/state-comparison-chart";
+import ComparisonDetails from "@/components/state-comparison-details";
 import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover";
 import { Command, CommandEmpty, CommandGroup, CommandInput, CommandItem, CommandList } from "@/components/ui/command";
 
@@ -83,6 +85,25 @@ export default function StateComparison() {
           />
         </div>
       </div>
+
+      <div className="space-y-4">
+        <h3 className="text-lg font-semibold">Price Comparison</h3>
+        <ComparisonChart
+          location1={location1}
+          location2={location2}
+          price1={price1}
+          price2={price2}
+        />
+      </div>
+
+      <ComparisonDetails
+        location1={location1}
+        location2={location2}
+        price1={price1}
+        price2={price2}
+        fuelType={fuelType}
+        nationalAverage={nationalAverage}
+      />
     </div>
   );
 }
